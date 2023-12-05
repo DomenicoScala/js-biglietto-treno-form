@@ -5,19 +5,17 @@ myButton.addEventListener('click', function(){
     const kmInputValue = parseInt(kmInput.value)
     console.log('kmInputValue', kmInputValue, typeof kmInputValue)
 
-
-    const ageInput = document.getElementById('age');
-    const ageInputValue = parseInt(ageInput.value);
-    console.log('ageInputValue', ageInputValue, typeof ageInputValue);
+    const ageInput = document.getElementById('age');       
+    console.log('ageInput', ageInput, typeof ageInput);
 
     const prezzo = kmInputValue * 0.21;
 
-    if(ageInputValue < 18){
+    if(ageInput.value == 'under'){
         const scontoPrezzo = prezzo - ((prezzo / 100) * 20)
         document.getElementById('result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo.toFixed(2);
         console.log('scontoPrezzo' , scontoPrezzo,  typeof scontoPrezzo) 
     }
-    else if(ageInputValue > 65){
+    else if(ageInput.value == 'over'){
         const scontoPrezzo = prezzo - ((prezzo / 100) * 40);
         document.getElementById('result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo.toFixed(2);
         console.log('scontoPrezzo', scontoPrezzo, typeof scontoPrezzo)

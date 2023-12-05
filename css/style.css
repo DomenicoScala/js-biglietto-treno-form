@@ -1,8 +1,166 @@
-#result-container{
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+body{
+    background-color:#16436C;
+}
+
+/* 
+
+HEADER
+
+*/
+
+header {
+    padding: 20px;
+    background-color: rgb(43, 43, 43);
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+}
+
+.header-flex > *{
+    width: 50%;
+}
+
+.nav{
+    text-align: end;
+}
+
+.logo-cont{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-cont h1{
+    color: white;
+    margin-left: 15px;
+}
+
+#logoimg{
+    width: 20%;
+}
+
+.header-flex ul{
+    list-style: none;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 
+
+MAIN
+
+*/
+
+main h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.cont-card{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    display: flex;
+    height: 500px;
+}
+
+.card1, .card2{
+    background-color: rgba(128, 128, 128, 0.467);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
     padding: 50px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form label:nth-child(1){
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+form label:nth-child(2){
+    margin-bottom: 45px;
+    display: block;
+}
+
+.card1 form label p{
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+}
+
+select{
+    margin: 0 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:rgba(128, 128, 128, 0.467);
+    color: white;
+    padding: 5px;
+}
+
+#name, #km{
+    background-color: rgba(128, 128, 128, 0.467);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#special-button{
+    margin: 30px 50px;
+    padding: 5px;
+    background-color:#16436ced; 
+    color:white;
+    border-radius: 5px;
+}
+
+.card2{
+    width: calc(100% - 458px);
+    flex-grow: 1;
+}
+
+.card2 h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#result-container{
     text-align: center;
 }

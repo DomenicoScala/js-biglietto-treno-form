@@ -5,33 +5,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
+
+       
         
     </head>
     <body>
-        <div>
-            <label for="km">
-                Km
-            </label>
-            <input type="text" name="km" id="km">
-        </div>
+        <header>
+            <div class="container">
+                <div class="header-flex">
+                    <div class="logo-cont">
+                        <img id="logoimg" src="./img/logo train.png" alt="logo">
+                        <h1>TrainLink</h1>
+                    </div>
+
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">Destinazioni</a></li>
+                            <li><a href="#">Informazioni</a></li>
+                            <li><a href="#">News/Offerte</a></li>
+                            <li><a href="#">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         
-        <div>
-            <label for="age">
-                Età
-            </label>
-            <input type="number" name="age" id="age">
-        </div>
+        <main>
+            <div class="container">
+                
+                <div>
+                    <h2>FAI IL PREVENTIVO DEL TUO BIGLIETTO</h2>
+                </div>
+                
+                <div class="cont-card">
+                    <div class="card1">
+                        <form >
+                            <label for="name">
+                                <p>Nome Cognome</p>
+                                <div>
+                                    <input type="text" id="name" placeholder="Inserire Nome e Cognome">
+                                </div>
+                            </label>
 
-        <div>
-            <button id="special-button">
-                CLICCAMI
-            </button>
-        </div>
+                            <label for="km">
+                                <p>Km da Percorrere</p>
+                                <div>
+                                    <input type="number" id="km" name="km" placeholder="Inserisci km">
+                                </div>
+                            </label>
 
-        <div id="result-container">
+                            <label for="age">
+                                <p>Fascia d'età</p>
+                                <div>
+                                    <select name="age" id="age">
+                                        <option value="base">Maggiorenne</option>
+                                        <option value="under">Minorenne</option>
+                                        <option value="over">Over 65</option>
+                                    </select>
+                                </div>
+                            </label>
 
-        </div>
+                            <div>
+                                <button type="button" id="special-button">
+                                    GENERA
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card2">
+                        <div>
+                            <h3>IL TUO BIGLIETTO</h3>
+                        </div>
+
+                        <div id="result-container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
 
         <script type="text/javascript" src="./js/scripts.js"></script>
