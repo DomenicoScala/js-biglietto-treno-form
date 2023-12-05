@@ -1,0 +1,8 @@
+#result-container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
